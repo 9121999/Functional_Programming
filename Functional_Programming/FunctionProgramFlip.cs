@@ -35,6 +35,50 @@
 
         }
     }
+    public class EvenOdd
+    {
+        public void Findnum()
+        {
+            int num1, rem1;
+            Console.Write("Check whether a number is even or odd :\n");
+            Console.Write("\n");
+            Console.Write("Enter No : ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            rem1 = num1 % 2;
+            if (rem1 == 0)
+                Console.WriteLine("{0} is an Even No.\n", num1);
+            else
+                Console.WriteLine("{0} is an Odd No.\n", num1);
+        }
+    }
+    public class FactorNum
+    {
+        int num;
+        public void factors()
+        {
+            Console.WriteLine("enter any number");
+            int num = int.Parse(Console.ReadLine());
+            for (int i = 2; i <= num; i++)
+            {
+                while (num % i == 0)
+                {
+                    Console.WriteLine(i + " ");
+                    num = num / i;
+                }
+            }
+            if (num >= 2)
+            {
+                Console.WriteLine(num);
+            }
+        }
+    }
 }
+
+
+
+    
+
+ 
+
 
 

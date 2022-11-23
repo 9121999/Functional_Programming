@@ -104,6 +104,7 @@
                     Console.Write("The 3rd Number is the greatest among three");
             }
         }
+
         public class LeapYear
         {
             public void Year()
@@ -124,6 +125,31 @@
                     Console.ReadLine();
                 }
             }
+            public class NPower
+            {
+                public void PowerOfTwo()
+                {
+                    Console.WriteLine("Enter as 2^Number:- ");
+                    string NNumber = Console.ReadLine();
+                    int number = Convert.ToInt32(NNumber);
+                    int num = 1;
+                    int i = 1;
+                    int LimitPowerTwo = 31;
+                    if (number > LimitPowerTwo)
+                    {
+                        Console.WriteLine($"You Enter {number}  of 2^ exceeds the value limit 31  ");
+                    }
+                    else
+                    {
+                        for (i = 1; i <= number; i++) //to Check a number 
+                        {
+                            num = (num * 2); // multiply number by 2
+                            Console.WriteLine(num);
+                        }
+                    }
+                }
+            }
         }
     }
 }
+    

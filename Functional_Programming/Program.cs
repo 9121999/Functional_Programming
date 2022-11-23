@@ -1,5 +1,6 @@
 ﻿using static FunctionalProgram.FactorNum;
 using static FunctionalProgram.FactorNum.LeapYear;
+using static FunctionalProgram.FactorNum.LeapYear.NPower;
 
 namespace FunctionalProgram
 
@@ -10,7 +11,7 @@ namespace FunctionalProgram
         {
             while (true)
             {
-                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.EvenOdd \n 3.Factors \n 4.FindLargest \n 5.LeapYear \n 6.PowerOfTwo");
+                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.EvenOdd \n 3.Factors \n 4.FindLargest \n 5.LeapYear \n 6.PowerOfTwo \n 7.SwapTwoNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -38,6 +39,10 @@ namespace FunctionalProgram
                     case 6:
                         NPower power = new NPower();
                         power.PowerOfTwo();
+                        break;
+                    case 7:
+                        SwapNumber swap = new SwapNumber();
+                        swap.SwapTwoNumbers();
                         break;
                 }
             }

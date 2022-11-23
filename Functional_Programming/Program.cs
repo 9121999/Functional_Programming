@@ -11,7 +11,7 @@ namespace FunctionalProgram
         {
             while (true)
             {
-                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.EvenOdd \n 3.Factors \n 4.FindLargest \n 5.LeapYear \n 6.PowerOfTwo \n 7.SwapTwoNumber \n 8.HarmonicNumber \n 9.VowelAndConsonant");
+                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.EvenOdd \n 3.Factors \n 4.FindLargest \n 5.LeapYear \n 6.PowerOfTwo \n 7.SwapTwoNumber \n 8.HarmonicNumber \n 9.VowelAndConsonant\n 10.QuotientAndRemainder");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -51,6 +51,10 @@ namespace FunctionalProgram
                     case 9:
                       Letters letters = new Letters();
                         letters.VowelConsonant();
+                        break;
+                    case 10:
+                        Quotient quotient = new Quotient();
+                        quotient.FindQuoRem();
                         break;
                 }
             }

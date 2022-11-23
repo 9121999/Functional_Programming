@@ -104,6 +104,26 @@
                     Console.Write("The 3rd Number is the greatest among three");
             }
         }
+        public class LeapYear
+        {
+            public void Year()
+            {
+                {
+                    Console.WriteLine("Enter Year: ");
+                    int Year = int.Parse(Console.ReadLine());
 
+                    if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))
+                    {
+
+                        Console.WriteLine("{0} is Leap Year.", Year);
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} Is not a leap year.", Year);
+                    }
+                    Console.ReadLine();
+                }
+            }
+        }
     }
 }

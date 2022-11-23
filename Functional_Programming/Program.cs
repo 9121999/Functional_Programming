@@ -9,7 +9,7 @@ namespace FunctionalProgram
         {
             while (true)
             {
-                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.EvenOdd \n 3.Factors \n 4.FindLargest");
+                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.EvenOdd \n 3.Factors \n 4.FindLargest \n 5.LeapYear");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -30,8 +30,10 @@ namespace FunctionalProgram
                         Find find = new Find();
                         find.FindLargestNumber();
                         break;
-                       
-
+                    case 5:
+                        LeapYear lp = new LeapYear();
+                        lp.Year();
+                        break;
                 }
             }
         }

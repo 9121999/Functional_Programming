@@ -180,10 +180,33 @@ namespace FunctionalProgram
                         }
                     }
                 }
+                public class Letters
+                {
+                    public void VowelConsonant()
+                    {
+                        Console.WriteLine("Enter any Alphabet: ");
+                        char c = Convert.ToChar(Console.ReadLine());
+
+                        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+                            c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+                        {
+                            Console.WriteLine(c + " is vowel.");
+
+                        }
+                        else
+                        {
+                            Console.WriteLine(c + " is consonant.");
+
+                        }
+
+                    }
+                }
             }
         }
+
     }
 }
+    
 
 
 

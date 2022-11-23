@@ -11,7 +11,7 @@ namespace FunctionalProgram
         {
             while (true)
             {
-                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.EvenOdd \n 3.Factors \n 4.FindLargest \n 5.LeapYear \n 6.PowerOfTwo \n 7.SwapTwoNumber");
+                Console.WriteLine("\nselect program\n 1.FlipCoin\n 2.EvenOdd \n 3.Factors \n 4.FindLargest \n 5.LeapYear \n 6.PowerOfTwo \n 7.SwapTwoNumber \n 8.HarmonicNumber");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -43,6 +43,10 @@ namespace FunctionalProgram
                     case 7:
                         SwapNumber swap = new SwapNumber();
                         swap.SwapTwoNumbers();
+                        break;
+                    case 8:
+                        Harmonic harmonic = new Harmonic();
+                        harmonic.HarmonicNumber();
                         break;
                 }
             }
